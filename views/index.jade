@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  div.content
+    div.row
+      div.col-md-6
+        div.panel.panel-default
+          div.panel-heading
+            div.panel-title disk space
+          div.panel-body
+            div.progress root
+              div.progress-bar(role='progressbar' style='width:35%')
+            div.progress data
+              div.progress-bar.progress-bar-success(role='progressbar' style='width:80%')
+      div.col-md-6
+        div.panel.panel-primary
+          div.panel-heading
+            div.panel-title memory
+          div.panel-body
+            div.progress
+              div.progress-bar.progress-bar-danger(role='progressbar' style='width:95%')
+    div.row
+      div.col-md-6
+        div.panel.panel-primary
+          div.panel-heading
+            div.panel-title shopping list
+          div.panel-body
+            ul#list.list-group
+              li.list-group-item milk
+              li.list-group-item cookies
+            input#listinput(type='text')
+            button#listbtn.btn.btn-default(type='button') add to list
+
+    div.alert.alert-success(role='alert') success message
+    div.alert.alert-danger(role='alert') error message
+    div.alert.alert-warning(role='alert') warning message
+
+
+

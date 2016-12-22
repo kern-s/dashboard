@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    script(type='text/javascript' src='/javascripts/jquery.min.js')
+    script(type='text/javascript' src='/javascripts/bootstrap.min.js')
+    script(type='text/javascript' src='/javascripts/dashboard.js')
+  body
+    nav.navbar.navbar-default.navbar-fixed-top
+      div.container
+        div.navbar-header
+          button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
+          a.navbar-brand(href='#')= title
+        div#navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active: a(href='#') link1
+            li: a(href='#') link2
+
+    block content
